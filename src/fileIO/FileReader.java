@@ -2,27 +2,55 @@ package fileIO;
 
 import task3.Pair;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 
 public class FileReader {
 
-    public List<Integer> readOneLinerFileToList(String path) throws FileNotFoundException {
-        List<Integer> allNumbers = new ArrayList<>();
+    // commented - tested and it works slower than using bufferedReader
+//    public List<Integer> readOneLinerFileToList(String path) throws FileNotFoundException { // using scanner
+//        List<Integer> allNumbers = new ArrayList<>();
+//
+//        File file = new File(path);
+//        Scanner scanner = new Scanner(file);
+//        scanner.useDelimiter("\\s+"); //delimiter set
+//
+//        while (scanner.hasNext())
+//            allNumbers.add(Integer.valueOf(scanner.next()));
+//
+//        scanner.reset();
+//        return allNumbers;
+//    }
 
-        File file = new File(path);
-        Scanner scanner = new Scanner(file);
-        scanner.useDelimiter("\\s+"); //delimiter set
+    public List<Integer> readOneLinerFileToList(String path) throws IOException { // using bufferedreader
+        BufferedReader reader = Files.newBufferedReader(Paths.get(path));
 
-        while (scanner.hasNext())
-            allNumbers.add(Integer.valueOf(scanner.next()));
-
-        scanner.reset();
-        return allNumbers;
+        return new ArrayList<>(Arrays.asList(reader.readLine().split("\\s+")))
+                .stream().map(Integer::valueOf).toList();
     }
 
-    public Set<Pair> readGraphFileToSet(String path) throws FileNotFoundException {
+    public Set<Pair> readGraphFileToSet(String path) throws IOException {
+        Set<Pair> connectionsSet = new HashSet<>();
+
+        String line;
+        BufferedReader reader = Files.newBufferedReader(Paths.get(path));
+        while ((line = reader.readLine()) != null) {
+            if (line.matches("\\d+ \\d+")) {
+                int left = Integer.parseInt(line.substring(0, line.indexOf(' ')));
+                int right = Integer.parseInt(line.substring(line.indexOf(' ') + 1));
+                connectionsSet.add(new Pair(left, right));
+            }
+        }
+        return connectionsSet;
+    }
+
+    /*
+        public Set<Pair> readGraphFileToSet(String path) throws FileNotFoundException {
         Set<Pair> connectionsSet = new HashSet<>();
 
         File file = new File(path);
@@ -45,6 +73,6 @@ public class FileReader {
         scanner.reset();
         return connectionsSet;
     }
-
+     */
 
 }

@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8eef7ca-d143-43a9-870f-8f163165ab69" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSN_Tasks.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="a8eef7ca-d143-43a9-870f-8f163165ab69" name="Changes" comment="deleted large files">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fileIO/FileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/Test2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Test3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/Test3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileIO/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileIO/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task1/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task1/Task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task2/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task2/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task3/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task3/Task3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +41,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Dawid/IdeaProjects/lsn/LSN_Tasks",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dawid/IdeaProjects/lsn/LSN_Tasks&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -71,7 +73,35 @@
       <option name="presentableId" value="Default" />
       <updated>1705328224450</updated>
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1705455920117</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705455920117</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added classes and test files">
+      <created>1705456064209</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705456064209</updated>
+    </task>
+    <task id="LOCAL-00003" summary="deleted large files">
+      <created>1705456133744</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705456133744</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <MESSAGE value="added classes and test files" />
+    <MESSAGE value="deleted large files" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted large files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

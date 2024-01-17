@@ -39,6 +39,10 @@ public class Task1 {
                 .replaceAll(",", "");
     }
 
+    public void printResults() {
+        System.out.println(this);
+    }
+
     @Override
     public String toString() {
         return listToString() + "\n" +

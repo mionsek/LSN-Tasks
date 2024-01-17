@@ -1,5 +1,7 @@
 package task3;
 
+import constants.Constants;
+
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
@@ -27,9 +29,9 @@ public class Task3 {
             if (!foundLeft && !foundRight)
                 addNewGraph(pair);
             if (foundLeft && !foundRight)
-                addToExistingGraph(pair, "left");
+                addToExistingGraph(pair, Constants.LEFT);
             if (!foundLeft && foundRight)
-                addToExistingGraph(pair, "right");
+                addToExistingGraph(pair, Constants.RIGHT);
             if (foundLeft && foundRight)
                 mergeGraphs(pair);
         }
@@ -41,9 +43,9 @@ public class Task3 {
 
     private void addToExistingGraph(Pair pair, String side) {
         for (TreeSet<Integer> singleSet : createdConnections) {
-            if (side.equals("left") && singleSet.contains(pair.getLeft()))
+            if (side.equals(Constants.LEFT) && singleSet.contains(pair.getLeft()))
                 singleSet.add(pair.getRight());
-            if (side.equals("right") && singleSet.contains(pair.getRight()))
+            if (side.equals(Constants.RIGHT) && singleSet.contains(pair.getRight()))
                 singleSet.add(pair.getLeft());
         }
     }
@@ -70,6 +72,11 @@ public class Task3 {
 
 
     public void printResults() {
-        System.out.println(this.createdConnections.size());
+        System.out.println(this);
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(this.createdConnections.size());
     }
 }
