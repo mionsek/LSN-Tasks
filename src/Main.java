@@ -5,10 +5,8 @@ import task1.Task1;
 import task2.Task2;
 import task3.Task3;
 
-import java.io.IOException;
-
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         FileReader reader = new FileReader();
         FileWriter writer = new FileWriter();
 
@@ -22,10 +20,10 @@ public class Main {
         task2.printResults();
         writer.saveToFile(Constants.OUTPUT_PATH_2, task2.toString());
 
-
-        Task3 task3 = new Task3(reader.readGraphFileToSet(Constants.INPUT_PATH_3));
+        Task3 task3 = new Task3(reader.readGraphFileToSet(Constants.TEST_PATH));
         System.out.println("\nTask3:");
         task3.printResults();
         writer.saveToFile(Constants.OUTPUT_PATH_3, task3.toString());
+
     }
 }

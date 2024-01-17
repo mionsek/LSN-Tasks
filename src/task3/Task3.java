@@ -28,11 +28,11 @@ public class Task3 {
             }
             if (!foundLeft && !foundRight)
                 addNewGraph(pair);
-            if (foundLeft && !foundRight)
+            else if (foundLeft && !foundRight)
                 addToExistingGraph(pair, Constants.LEFT);
-            if (!foundLeft && foundRight)
+            else if (!foundLeft && foundRight)
                 addToExistingGraph(pair, Constants.RIGHT);
-            if (foundLeft && foundRight)
+            else if (foundLeft && foundRight) // i know its redundant, but looks prettier
                 mergeGraphs(pair);
         }
     }
@@ -51,23 +51,28 @@ public class Task3 {
     }
 
     private void mergeGraphs(Pair pair) {
-        TreeSet<Integer> leftSet = createdConnections
+        // Actually I could skip it there because earlier there was a condition - 'contains'
+        Optional<TreeSet<Integer>> leftSetOptional = getOptional(pair.getLeft());
+        Optional<TreeSet<Integer>> rightSetOptional = getOptional(pair.getRight());
+
+        if (leftSetOptional.isPresent() && rightSetOptional.isPresent()){
+            TreeSet<Integer> leftSet = leftSetOptional.get();
+            TreeSet<Integer> rightSet = rightSetOptional.get();
+
+            rightSet.addAll(leftSet);
+
+            createdConnections.removeIf(singleSet -> singleSet.contains(pair.getLeft()));
+            createdConnections.removeIf(singleSet -> singleSet.contains(pair.getRight()));
+            createdConnections.add(rightSet);
+
+        }
+    }
+
+    private Optional<TreeSet<Integer>> getOptional(Integer pair) {
+        return createdConnections
                 .stream()
-                .filter(singleSet -> singleSet.contains(pair.getLeft()))
-                .findFirst()
-                .get(); // not checking if exists because it was checked before. I know I could use Optional<>
-
-        TreeSet<Integer> rightSet = createdConnections
-                .stream()
-                .filter(singleSet -> singleSet.contains(pair.getRight()))
-                .findFirst()
-                .get();
-
-        rightSet.addAll(leftSet);
-
-        createdConnections.removeIf(singleSet -> singleSet.contains(pair.getLeft()));
-        createdConnections.removeIf(singleSet -> singleSet.contains(pair.getRight()));
-        createdConnections.add(rightSet);
+                .filter(singleSet -> singleSet.contains(pair))
+                .findFirst();
     }
 
 

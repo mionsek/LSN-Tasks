@@ -17,5 +17,6 @@ public final class Constants {
     public static final String OUTPUT_PATH_1 = OUTPUT + "Results1.txt";
     public static final String OUTPUT_PATH_2 = OUTPUT + "Results2.txt";
     public static final String OUTPUT_PATH_3 = OUTPUT + "Results3.txt";
+    public static final String TEST_PATH = INPUT + "LargeTest.txt";
 
 }

@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8eef7ca-d143-43a9-870f-8f163165ab69" name="Changes" comment="deleted large files">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fileIO/FileWriter.java" afterDir="false" />
+    <list default="true" id="a8eef7ca-d143-43a9-870f-8f163165ab69" name="Changes" comment="Added logger and catched exceptions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/Test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/Test2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/Test3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/Test3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fileIO/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileIO/FileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task1/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task1/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task2/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task2/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileIO/FileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileIO/FileWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/task3/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task3/Task3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,17 +89,29 @@
       <option name="project" value="LOCAL" />
       <updated>1705456133744</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added constants and output to file ( for bigger files)">
+      <created>1705520711143</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705520711143</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
     <MESSAGE value="added classes and test files" />
     <MESSAGE value="deleted large files" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted large files" />
+    <MESSAGE value="Added constants and output to file ( for bigger files)" />
+    <MESSAGE value="Added logger and catched exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added logger and catched exceptions" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LSN_Tasks$Main.ic" NAME="Main Coverage Results" MODIFIED="1705522718111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
