@@ -7,9 +7,14 @@ public class Task1 {
     private final List<Integer> distinctList;
 
     public Task1(List<Integer> integerList) {
+//        long startTime = System.currentTimeMillis();
+
         this.integerList = integerList;
         this.distinctList = new ArrayList<>(new HashSet<>(integerList));
         sortDistinctList();
+//        long endTime = System.currentTimeMillis();
+//        System.out.println("\n\nDuration: " + (endTime - startTime) + " ms");
+
     }
 
     public int getCount() {

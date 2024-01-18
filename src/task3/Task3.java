@@ -10,10 +10,14 @@ public class Task3 {
     private final int numberOfGraphs;
 
     public Task3(Set<Pair> connectionsSet) {
+//        long startTime = System.currentTimeMillis();
         this.connectionsSet = connectionsSet;
         createdConnections = new HashSet<>();
 
         numberOfGraphs = findNumberOfSeparateGraphs(connectionsSet);
+//        long endTime = System.currentTimeMillis();
+//        System.out.println("\n\nDuration: " + (endTime - startTime) + " ms");
+
     }
 
     public int findNumberOfSeparateGraphs(Set<Pair> verticesSet) {
