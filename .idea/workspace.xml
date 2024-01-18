@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8eef7ca-d143-43a9-870f-8f163165ab69" name="Changes" comment="Added larger test file">
+    <list default="true" id="a8eef7ca-d143-43a9-870f-8f163165ab69" name="Changes" comment="Optimized 3rd task according to wiki - disjoint set data structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/Test3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/Test3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/LargeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/LargeTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/Test1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task2/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task2/Task2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/task3/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task3/Task3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705531669869</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Optimized 3rd task according to wiki - disjoint set data structure">
+      <created>1705586174679</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705586174679</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -118,14 +127,15 @@
     <MESSAGE value="Added constants and output to file ( for bigger files)" />
     <MESSAGE value="Added logger and catched exceptions" />
     <MESSAGE value="Added larger test file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added larger test file" />
+    <MESSAGE value="Optimized 3rd task according to wiki - disjoint set data structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized 3rd task according to wiki - disjoint set data structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/task3/Task3.java</url>
-          <line>30</line>
+          <line>26</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>

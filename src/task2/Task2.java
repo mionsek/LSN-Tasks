@@ -40,8 +40,8 @@ public class Task2 {
     }
 
     private void addPairsToSet(LinkedHashMap<Integer, Long> counts, int key, int wantedValueKey) {
-        long combined = counts.get(key) * counts.get(wantedValueKey);
-        for (int cnt = 0; cnt < combined; cnt += 1)
+        var combined = counts.get(key) * counts.get(wantedValueKey);
+        for (var cnt = 0; cnt < combined; cnt += 1)
             this.pairList.add(new Pair(wantedValueKey, key));
     }
 
@@ -58,7 +58,11 @@ public class Task2 {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        pairList.forEach(pair -> sb.append(pair.getLeft()).append(" ").append(pair.getRight()).append("\n"));
+        pairList.forEach(pair ->
+                sb.append(pair.getLeft())
+                        .append(" ")
+                        .append(pair.getRight())
+                        .append("\n"));
         return sb.toString();
     }
 }
