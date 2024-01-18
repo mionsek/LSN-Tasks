@@ -1,0 +1,5 @@
+-15 1 2 5 10 20 200
+count: 9
+distinct: 7
+min: -15
+max: 200
