@@ -57,6 +57,6 @@ public class Task3 {
 
     @Override
     public String toString() {
-        return String.valueOf(this.createdConnections.size());
+        return String.valueOf(getNumberOfGraphs());
     }
 }
